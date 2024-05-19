@@ -28,8 +28,11 @@ public class Driver {
         //System.out.println(RangeAdditionII.maximumCount(m,n,ops));
 
         int[] arr0 = {1,1,1,1,1,1,1,1};
-        System.out.println(SubArray.subArray(arr0));
+        //System.out.println(SubArray.subArray(arr0));
 
-        System.out.println(MinimumSizeSubarraySum.maxSizeSubArraySum(arr, 11));
+        //System.out.println(MinimumSizeSubarraySum.maxSizeSubArraySum(arr, 11));
+
+        String s = "(){}[]";
+        System.out.println(ValidParenthesis.isValidParenthesis(s));
     }
 }
