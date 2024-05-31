@@ -2,13 +2,13 @@ package org.practice_24.leetcode;
 
 import java.util.Stack;
 
-public class NextGreaterElement {
-    public static int[] nge(int[] arr) {
+public class PreviousGreaterElement {
+    public static int[] pge(int[] arr) {
         int[] res = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = arr.length - 1; i >= 0; i--) {
             res[i] = -1;
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] > arr[i]) {
+            for (int j = i - 1; j >= 0; j--) {
+                if (arr[i] < arr[j]) {
                     res[i] = j;
                     break;
                 }
@@ -17,11 +17,10 @@ public class NextGreaterElement {
         return res;
     }
 
-    public static int[] ngeStack(int[] arr) {
+    public static int[] pgeStack(int[] arr) {
         int[] res = new int[arr.length];
-        //Arrays.fill(res, -1);
         Stack<Integer> stack = new Stack<>();
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = arr.length - 1; i >= 0; i--) {
             res[i] = -1;
             while (!stack.isEmpty() && arr[stack.peek()] < arr[i]) {
                 res[stack.peek()] = i;
@@ -31,5 +30,4 @@ public class NextGreaterElement {
         }
         return res;
     }
-
 }

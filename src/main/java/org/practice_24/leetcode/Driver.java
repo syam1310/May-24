@@ -1,5 +1,7 @@
 package org.practice_24.leetcode;
 
+import java.util.Arrays;
+
 public class Driver {
     public static void main(String[] args) {
         int[] arr = {1, 2, 1, 3, 5, 6, 4};
@@ -27,12 +29,41 @@ public class Driver {
         int[][] ops = {{2, 2}, {3, 3}};
         //System.out.println(RangeAdditionII.maximumCount(m,n,ops));
 
-        int[] arr0 = {1,1,1,1,1,1,1,1};
+        int[] arr0 = {1, 1, 1, 1, 1, 1, 1, 1};
         //System.out.println(SubArray.subArray(arr0));
 
         //System.out.println(MinimumSizeSubarraySum.maxSizeSubArraySum(arr, 11));
 
         String s = "(){}[]";
-        System.out.println(ValidParenthesis.isValidParenthesis(s));
+        //System.out.println(ValidParenthesis.isValidParenthesis(s));
+
+        String[] words = {"i", "love", "leetcode", "i", "love", "coding"};
+        int k = 2;
+        //System.out.println(TopKFrequentWords.topKFrequentEle(words, k));
+
+        String str = "loveleetcode";
+        //System.out.println(FirstUniqueCharacterInAString.getIndexOfFirstUniqueCharacterInAString(str));
+
+
+        int[] ints = {2, 3, 4};
+        //System.out.println(Subsets.allSubsets(ints));
+
+        // Pascal Triangle
+        //System.out.println(PascalTriangle.pt(4));
+
+        // calculate NCR
+        //System.out.println(CalculateNCR.calculateNCR(5, 2));
+
+        int[] arr03 = {5, 2, 6, 1};
+        //System.out.println(CountOfSmallerNumbersAfterSelf.countSmaller(arr03));
+
+        String s4 = "1101";
+        //System.out.println(NuberOfStepsToReduceOne.numSteps(s4));
+
+        int[] narr = {2, 3, 1, 6, 7};
+        System.out.println(Arrays.toString(NextGreaterElement.ngeStack(narr)));
+        System.out.println(Arrays.toString(NextSmallerElement.nseStack(narr)));
+        System.out.println(Arrays.toString(PreviousGreaterElement.pgeStack(narr)));
+        System.out.println(Arrays.toString(PreviousSmallerElement.pseStack(narr)));
     }
 }
