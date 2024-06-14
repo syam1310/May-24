@@ -1,7 +1,5 @@
 package org.practice_24.leetcode;
 
-import java.util.Arrays;
-
 public class Driver {
     public static void main(String[] args) {
         int[] arr = {1, 2, 1, 3, 5, 6, 4};
@@ -61,9 +59,23 @@ public class Driver {
         //System.out.println(NuberOfStepsToReduceOne.numSteps(s4));
 
         int[] narr = {2, 3, 1, 6, 7};
-        System.out.println(Arrays.toString(NextGreaterElement.ngeStack(narr)));
-        System.out.println(Arrays.toString(NextSmallerElement.nseStack(narr)));
-        System.out.println(Arrays.toString(PreviousGreaterElement.pgeStack(narr)));
-        System.out.println(Arrays.toString(PreviousSmallerElement.pseStack(narr)));
+        //System.out.println(Arrays.toString(NextGreaterElement.ngeStack(narr)));
+        //System.out.println(Arrays.toString(NextSmallerElement.nseStack(narr)));
+        //System.out.println(Arrays.toString(PreviousGreaterElement.pgeStack(narr)));
+        //System.out.println(Arrays.toString(PreviousSmallerElement.pseStack(narr)));
+
+        // Valid Sudoku
+
+        String s1 = "coaching";
+        String t = "coding";
+
+        //System.out.println(AppendCharactersToStringToMakeSubsequence.appendCharacters(s1, t));
+
+        String[] emails = {"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"};
+        //System.out.println(UniqueEmailAddresses.numOfUniqueEmails(emails));
+
+        int[] arr3e = {3,1,2,1,2,7};
+        System.out.println(MinimumIncrementToMakeArrayUnique.minIncrementForUnique(arr3e));
+
     }
 }

@@ -1,4 +1,4 @@
-package org.practice_24.design.factory.observer;
+package org.practice_24.design.factory.observer.youtubechannalsubscription;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,15 +10,11 @@ public class YoutuberChannal implements Subject {
     public void subscribe(Observer ob) {
         this.subscribers.add(ob);
     }
+
     @Override
     public void unsubscribe(Observer ob) {
 
         this.subscribers.remove(ob);
-    }
-
-    @Override
-    public void newVideoUploaded() {
-
     }
 
     @Override

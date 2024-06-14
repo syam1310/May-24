@@ -1,4 +1,4 @@
-package org.practice_24.design.factory.observer;
+package org.practice_24.design.factory.observer.youtubechannalsubscription;
 
 import java.io.BufferedReader;
 import java.io.IOException;
