@@ -19,6 +19,10 @@ public class Driver {
         int x = 3;
         int y = 3;
 
-        System.out.println(MaximumTipCalculator.maxTip(arr1.length, x, y, arr1, brr1));
+        //System.out.println(MaximumTipCalculator.maxTip(arr1.length, x, y, arr1, brr1));
+
+        int n = 4;
+        int q = 7;
+        System.out.println(SummedMatrix.summedMat(n, q));
     }
 }

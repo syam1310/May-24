@@ -75,7 +75,27 @@ public class Driver {
         //System.out.println(UniqueEmailAddresses.numOfUniqueEmails(emails));
 
         int[] arr3e = {3,1,2,1,2,7};
-        System.out.println(MinimumIncrementToMakeArrayUnique.minIncrementForUnique(arr3e));
+        //System.out.println(MinimumIncrementToMakeArrayUnique.minIncrementForUnique(arr3e));
 
+        String sj = "abc";
+        //System.out.println(PalindromicSubstrings.palindromicSubstring(sj));
+
+        int[] coins = {1,2,5};
+        int amount = 11;
+       // System.out.println(CoinChange.coinChange(coins, amount));
+
+        int[] lis = {5, 8, 7, 1, 9};
+        //System.out.println(LongestIncreasingSubsequence.lis(lis));
+
+        int[] difficulty = {2,4,6,8,10};
+        int[] profit = {10,20,30,40,50};
+        int[] workers = {4,5,6,7};
+        //System.out.println(MostProfitAssigningWork.maxProfitAssignment(difficulty, profit, workers));
+
+        //System.out.println(GCD.gcd(4, 6));
+        int[] nums = {10, 1, 2, 4, 7, 2};
+        int limit = 5;
+
+        System.out.println(LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.longestSubarray(nums, limit));
     }
 }
